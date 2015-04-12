@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-venue: FIXME (brief name of host site)
-address: FIXME (street address of home location)
-country: FIXME (country (hyphenated if need be, like 'United-Kingdom')
-language: FIXME (language code like 'en' or 'fr')
+venue: Universidade Federal do Ceará
+address: FIXME
+country: Brazil
+language: pt
 latlng: (fractional latitude and longitude like 41.7901128,-87.6007318)
-humandate: FIXME (use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: FIXME (use the format '9:00 am - 4:30 pm' (without the quotes)
-startdate: FIXME (use YYYY-MM-DD format like 2015-01-01)
-enddate: FIXME (use YYYY-MM-DD format like 2015-01-02)
-instructor: (list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"])
-helper: (list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"])
-contact: FIXME (contact email address for workshop organizer)
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
-eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+humandate: Jun 19-20, 2015
+humantime: 9:00 am - 5:00 pm
+startdate: 2015-06-19
+enddate: 2015-06-20
+instructor: ["Daniela Ushizima", "Raniere Silva"]
+helper:
+contact: dani.lbnl@gmail.com
+etherpad:
+eventbrite:
 ---
 <!--
   HEADER
@@ -205,7 +205,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <h2>Resumo</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Unix Shell</h3>
     <ul>
       <li>Arquivos e diretórios</li>
@@ -217,6 +217,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Referências...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3>Programação em Python</h3>
     <ul>
@@ -230,8 +231,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Referências...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
+  -->
+  <div class="col-md-4">
     <h3>Programming in R</h3>
     <ul>
       <li>Trabalhando com vetores e data frames</li>
@@ -242,11 +243,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/06-R.html">Referências...</a></li>
     </ul>
   </div>
-  -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Controle de versão com Git</h3>
     <ul>
       <li>Criação de repositórios</li>
@@ -260,6 +257,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Referências...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3>Gerenciando dados com SQL</h3>
     <ul>
@@ -274,6 +272,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Referências...</a></li>
     </ul>
   </div>
+  -->
 </div>
 
 <hr/>
@@ -365,7 +364,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <p>
-        Baixe e instale 
+        Baixe e instale
         <a href="http://msysgit.github.io/">Git for Windows</a>.
         Ele irá disponibilizar Git e Bash no seu computador.
       </p>
@@ -457,106 +456,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   </div>
 </div> <!-- End of 'Git' section. -->
 
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
-  <h3>Python</h3>
-
-  <p>
-    <a href="http://python.org">Python</a> é uma linguagem popular para computação científica,
-    e ótima também para programação de propósito geral.
-    Instalar todos os pacotes científicos individualmente
-    pode ser um pouco difícil
-    e por isso recomendamos utilizar um instalador "tudo-em-um".
-  </p>
-
-  <p>
-    Independente de como você escolher instalá-lo,
-    <strong>certifique-se de instalar Python na versão 2.x e não a versão 3.x</strong>
-    (e.g., 2.7 é OK mas não 3.4).
-    Python 3 introduz mudanças que irão quebrar alguns dos exemplos que
-    utilizamos no workshop.
-  </p>
-
-  <p>
-    Iremos ensinar Python utilizando o IPython notebook,
-    um ambiente de programação utilizado através do navegador web.
-    Para que isso funcione
-    você vai precisar de um navegador web recente.
-    As versões atuais do Chrome, Safari e Firefox são todos
-    <a href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>suportados</a> 
-    (navegadores web antigos,
-    incluindo Internet Explorer 9 e inferior não são).
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="python-windows">Windows</h4>
-      <ul>
-	<li>
-          Baixe e instale <a href="http://continuum.io/anacondace.html">Anaconda CE</a>.
-	</li>
-	<li>
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
-          Utilize todas as opções padrões de instalação
-          <em>exceto</em>
-	  <strong>Fazer Anaconda seu interpretador Python padrão</strong>.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-macosx">Mac OS X</h4>
-      <ul>
-	<li>
-          Baixe e instale
-          <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
-          Utilize todas as opções padrões de instalação.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4 id="python-linux">Linux</h4>
-      <p>
-        Recomendamos o instalador "todo-em-um"
-	<a href="http://continuum.io/downloads.html">Anaconda</a>.
-	(A instalação requerer o uso do shell
-        e se você não estiver confortável
-        baixe o instalador
-        e vamos lhe ajudar a instalá-lo no workshop.)
-      </p>
-      <ol>
-	<li>
-          Baixe o instalador correspondente ao seu sistema operacional
-          e salve-o no seu diretório de usuário.
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
-	</li>
-	<li>
-          Abra um terminal.
-	</li>
-	<li>
-          Digite <pre>bash Anaconda-</pre>
-          e pressione a tecla <code>TAB</code>.
-          O nome do arquivo será completado.
-	</li>
-	<li>
-          Pressione <code>ENTER</code>.
-          Siga as instruções que aparecerem no terminal.
-          Quando aparecer dois pontos no fim da tela pressione a seta direcional
-          para baixo até obter o fim do texto. Digite <code>yes</code> e pressione
-          enter para aceitar a licença. Pressione enter para aceitar o diretório
-          padrão para a instalação. Digite <code>yes</code> e pressione enter para
-          adicionar Anaconda ao seu <code>PATH</code> (isso irá tornar Anaconda
-          seu interpretador Python padrão).
-	</li>
-      </ol>
-    </div>
-  </div>
-</div> <!-- End of 'Python' section. -->
-
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -601,66 +500,3 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL é uma linguagem de programação especializada para bancos de dados.
-    Nós utilizaremos um gerenciador simples para banco de dados chamado
-    <a href="http://www.sqlite.org/">SQLite</a>
-    na nossa lição.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-      O <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-      instala o <code>sqlite3</code> para Windows.
-      Se você tiver utilizado o instalador para configurar o nano,
-      você não precisa instalá-lo novamente.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-	<code>sqlite3</code> é por padrão pré-instalado no Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-	<code>sqlite3</code> é por padrão pré-instalado no Linux.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'SQLite' section. -->
-
-<!--
-  Uncomment this section if you are using our virtual machine.
-
-<div id="vm">
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
-</div>
--->
