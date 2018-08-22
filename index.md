@@ -125,8 +125,8 @@ eventbrite:
 -->
 <p>
   <strong>Contato</strong>:
-  Por favor, envie um email para <a href='mailto:flavio86@ufpi.edu.br?Subject=Software Carpentry na UFC'>Flavio</a> 
-  ou <a href="mailto:romuere@ufpi.edu.br?Subject=Software Carpentry na UFC">Romuere</a>
+  Por favor, envie um email para 
+  <a href="mailto:romuere@ufpi.edu.br?Subject=Software Carpentry na UFC">Romuere</a>
   ou {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
