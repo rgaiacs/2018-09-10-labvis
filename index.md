@@ -1,20 +1,20 @@
----
+---     
 layout: workshop
-root: .
+carpentry: swc
 venue: Universidade Federal do Ceará
 address: LabVis
 country: Brazil
 language: pt
 latlng: -3.74576,-38.57431
-humandate: Jun 19-20, 2015
+humandate: 10-11 de Setembro de 2018
 humantime: 9:00 am - 5:00 pm
-startdate: 2015-06-19
-enddate: 2015-06-20
-instructor: ["Daniela Ushizima", "Raniere Silva"]
-helper: ["Alexandre \"asm\""]
-contact: dani.lbnl@gmail.com
+startdate: 2018-09-10
+enddate: 2018-09-11
+instructor: ["Raniere Silva"]
+helper: ["Romuere Silva"]
+contact: fsombraufc@gmail.com
 etherpad:
-eventbrite: 16989573271
+eventbrite: 
 ---
 <!--
   HEADER
@@ -513,10 +513,8 @@ eventbrite: 16989573271
       <h4>Indivíduos</h4>
       <ul>
         <li>Raniere Silva</li>
-        <li>Dani Ushizima</li>
         <li>Fátima Medeiros</li>
-        <li>Flavio</li>
-        <li>Romuere</li>
+        <li>Romuere Silva</li>
       </ul>
     </div>
     <div class="col-md-3">
