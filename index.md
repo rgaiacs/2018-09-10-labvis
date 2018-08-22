@@ -109,9 +109,7 @@ eventbrite:
 
 <ol>
   <li>Aceitar o <a href="{{site.swc_site}}/conduct.html">Código de Conduta</a> da Software Carpentry.</li>
-  <li>Realizar a pré-inscrição.</li>
-  <li>Enviar currículo e carta de apresentação para <a href='mailto:flavio86@ufpi.edu.br?Subject=Software Carpentry na UFC - CV'>flavio86@ufpi.edu.br</a>.</li>
-  <li>Realizar inscrição (seguindo informações enviadas por email).</li>
+  <li>Contactar <a href="mailto:romuere@ufpi.edu.br?Subject=Software Carpentry na UFC">Romuere</a> para inscrição.</li>
   <li>Trazer seu próprio notebook
     com os programas listados <a href="#setup">abaixo</a> já instalados.</li>
 </ol>
