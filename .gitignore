@@ -1,4 +1,10 @@
-*~
 *.pyc
+*~
 .DS_Store
+.RData
+.Rhistory
+.Rproj.user
+.ipynb_checkpoints
+.sass-cache
+__pycache__
 _site
