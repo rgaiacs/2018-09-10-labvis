@@ -217,7 +217,6 @@ eventbrite:
       <li>Laços sobre arquivo</li>
       <li>Criando e executando shell scripts</li>
       <li>Encontrando "coisas"</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Referências...</a></li>
     </ul>
   </div>
   <!--
@@ -231,7 +230,6 @@ eventbrite:
       <li>Laços e condicionais</li>
       <li>Programação defensiva</li>
       <li>Usando Python pela linha de comando</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Referências...</a></li>
     </ul>
   </div>
   -->
@@ -243,7 +241,6 @@ eventbrite:
       <li>Criando e usando funções</li>
       <li>Laços e condicionais</li>
       <li>Usando R pela linha de comando</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Referências...</a></li>
     </ul>
   </div>
   <div class="col-md-4">
@@ -257,7 +254,6 @@ eventbrite:
       <li>Resolvendo conflitos</li>
       <li>Licenças Abertas</li>
       <li>Onde hospedar seu trabalho e porque</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Referências...</a></li>
     </ul>
   </div>
   <!--
@@ -272,7 +268,6 @@ eventbrite:
       <li>Combinando tabelas</li>
       <li>Criando, modificando e deletando dados</li>
       <li>Programação com banco de dados</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Referências...</a></li>
     </ul>
   </div>
   -->
@@ -301,56 +296,6 @@ eventbrite:
   você precisa de um navegador web atual.
 </p>
 
-<div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Editor</h3>
-  <p>
-    Quando você está escrevendo um código, é interessante ter um editor de
-    texto otimizado para a escrita de código, com funcionalidades como
-    utilização de cores para palavras chaves. O editor padrão no Mac OS X e
-    Linux é o Vim, que não é famoso por ser intuitivo.
-    Se você acidentalmente encontrar-se preso nele,
-    tente pressionar <code>ESC</code>, digitar <code>:q!</code> e pressionar <code>ENTER</code>
-    para retornar à linha de comando.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
-      <p>
-        <code>nano</code> é o editor instalado pelo instalador da Software
-        Carpentry. Ele é um editor básico utilizado nas lições.
-      </p>
-      <p>
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> é outro popular
-        editor livre para Windows. Depois de instalá-lo você precisa adicionar o
-        diretório onde ele foi instalado no <em>path</em> do seu sistema para que
-        possa invocá-lo pela linha de comando (ou para que outros programas como
-        Git invoque-o por você). Por favor requisite ajuda dos instrutores para
-        fazer isso.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-macosx">Mac OS X</h4>
-      <p>
-        Nos recomendamos
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> ou
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        Você também pode utilizar o <code>nano</code> que deveria estar instalado
-        por padrão.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        <a href="http://kate-editor.org/">Kate</a> é uma das várias opções para os
-        usuários de Linux.
-        Você também pode utilizar <code>nano</code> que deveria estar
-        pré-instalado.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'editor' section. -->
-
 <div id="shell"> <!-- Start of 'shell' section. -->
   <h3>Bash Shell</h3>
 
@@ -365,25 +310,49 @@ eventbrite:
       <p>
         Baixe e instale
         <a href="http://msysgit.github.io/">Git for Windows</a>.
-        Ele irá disponibilizar Git e Bash no seu computador.
+        Durante a instalação,
+        siga os passos abaixo.
       </p>
-      <h4>Instalador da Software Carpentry</h4>
-      <p>Ele instala e configura o <code>nano</code> (<a href="{{site.swc_github}}/windows-installer">e outras coisas</a>)</p>
-      <p><em>Esse instalador precisa que uma conexão de internet.</em></p>
-      <p>Depois de instalar Git Bash:</p>
-      <ul>
-        <li>
-          Baixe <a href="{{site.swc_installer}}">Software Carpentry Windows Installer</a>.
-        </li>
-        <li>
-          Click duas vezes no arquivo para executá-lo.
-        </li>
-      </ul>
+          <ol>
+            {% comment %} Git 2.8.2 Setup {% endcomment %}
+            {% comment %} Information {% endcomment %}
+            <li>Clique em "Next".</li>
+            {% comment %} Select destination {% endcomment %}
+            <li>Clique em "Next".</li>
+            {% comment %} Select Components {% endcomment %}
+            <li>Clique em "Next".</li>
+            {% comment %} Select Menu Folder {% endcomment %}
+            <li>Clique em "Next".</li>
+            {% comment %} Select Editor {% endcomment %}
+            <li>Altere a opção para "Use the Nano editor by default" e clique em "Next".</li>
+            {% comment %} Adjusting your PATH environment {% endcomment %}
+            <li>
+                Mantenha "Use Git from the Windows Command Prompt" selecionado e clique em "Next".
+            </li>
+            {% comment %} Choosing the SSH executable {% endcomment %}
+            <li>Mantenha "Use the OpenSSL library" selecionado e clique em "Next".</li>
+            {% comment %} Configuring the line ending conversions {% endcomment %}
+            <li>
+                Mantenha "Checkout Windows-style, commit Unix-style line endings" selecionado e clique em "Next".
+            </li>
+            {% comment %} Configuring terminal emulator {% endcomment %}
+            <li>
+                Mantenha "Use MinTTY (the default terminal MSYS2)" selecionado e clique em "Next".
+            </li>
+            {% comment %} Configuring experimental performance tweaks {% endcomment %}
+            <li>Clique em "Install".</li>
+            {% comment %} Installing {% endcomment %}
+            {% comment %} Completing the Git Setup Wizard {% endcomment %}
+            <li>Clique em "Finish".</li>
+          </ol>
+      <p>
+        "Git Bash" estará disponível entre os programas instalados no "Menu Iniciar".
+      </p>
     </div>
     <div class="col-md-4">
-      <h4 id="shell-macosx">Mac OS X</h4>
+      <h4 id="shell-macosx">macOS</h4>
       <p>
-        O terminal padrão em todas as versões do Mac OS X é o bash e portanto você
+        O terminal padrão em todas as versões do macOS é o bash e portanto você
         não precisa instalar nada. Você pode acessar o bash pelo Terminal
         encontrado em <code>/Applications/Utilities</code>. Você provavelmente vai
         querer manter o Terminal no dock da sua área de trabalho.
@@ -425,21 +394,20 @@ eventbrite:
       </p>
     </div>
     <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
+      <h4 id="git-macosx">macOS</h4>
       <p>
-	<strong>Para OS X 10.8 e superior</strong>,
-        instale Git para Mac
+	<strong>Para macOS 10.8 ou superior</strong>,
+        instale Git para macOS
         baixando e executando
-	<a href="http://sourceforge.net/projects/git-osx-installer/files/latest/download">esse instalador</a>.
+        o instalador "mavericks" mais recente
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">nessa lista</a>.
         Depois de instalar Git, não existirá nenhum atalho no seu diretório <code>/Applications</code>
         pois Git é um programa de linha de comando.
       </p>
       <p>
-	<strong>Para versões antigas do OS X (10.5-10.7)</strong>
+	<strong>Para versões anteriores do macOS</strong>
         utilize o instalador mais recente para a sua máquina
-	<a href="http://sourceforge.net/projects/git-osx-installer/files/">disponível em</a>.
-        Utilize o instalador para Leopard para 10.5
-        e o Snow Leopard para 10.6-10.7.
+	<a href="http://sourceforge.net/projects/git-osx-installer/files/">disponível nessa lista</a>.
       </p>
     </div>
     <div class="col-md-4">
@@ -454,6 +422,48 @@ eventbrite:
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
+
+<div id="editor"> <!-- Start of 'editor' section. -->
+  <h3>Editor</h3>
+  <p>
+    Quando você está escrevendo um código, é interessante ter um editor de
+    texto otimizado para a escrita de código, com funcionalidades como
+    utilização de cores para palavras chaves. O editor padrão no macOS e
+    Linux é o Vim, que não é famoso por ser intuitivo.
+    Se você acidentalmente encontrar-se preso nele,
+    tente pressionar <code>ESC</code>, digitar <code>:q!</code> e pressionar <code>ENTER</code>
+    para retornar à linha de comando.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <p>
+        <code>nano</code> deve estar instalado no seu computador como parte da instalação do
+        Bash (descrito acima).
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-macosx">macOS</h4>
+      <p>
+        <code>nano</code> que deveria estar instalado
+        por padrão.
+        Outras opçôes são
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> ou
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        <code>nano</code> que deveria estar instalado
+        por padrão.
+        <a href="http://kate-editor.org/">Kate</a> é uma das outras opções para os
+        usuários de Linux.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'editor' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
@@ -477,7 +487,7 @@ eventbrite:
       </p>
     </div>
     <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
+      <h4 id="r-macosx">macOS</h4>
       <p>
 	Instale o R baixando e rodando
 	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">este arquivo .pkg</a>
