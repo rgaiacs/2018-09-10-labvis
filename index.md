@@ -41,6 +41,7 @@ eventbrite:
   scrolling="auto">
 </iframe>
 {% endif %}
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfjnC_t8eEiiHQSg7aR8Dhi2ZefXgFd1I3OLjBf4Amp20yjAw/viewform" class="btn btn-primary btn-lg btn-block">Inscreva-se Aqui</a>
 
 <h2>Informações gerais</h2>
 
@@ -109,7 +110,7 @@ eventbrite:
 
 <ol>
   <li>Aceitar o <a href="{{site.swc_site}}/conduct.html">Código de Conduta</a> da Software Carpentry.</li>
-  <li>Contactar <a href="mailto:romuere@ufpi.edu.br?Subject=Software Carpentry na UFC">Romuere</a> para inscrição.</li>
+  <li>Preencher o <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjnC_t8eEiiHQSg7aR8Dhi2ZefXgFd1I3OLjBf4Amp20yjAw/viewform">formulário online</a> para inscrição.</li>
   <li>Trazer seu próprio notebook
     com os programas listados <a href="#setup">abaixo</a> já instalados.</li>
 </ol>
