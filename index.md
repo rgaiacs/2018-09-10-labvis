@@ -13,7 +13,7 @@ enddate: 2018-09-11
 instructor: ["Raniere Silva"]
 helper: ["Romuere Silva"]
 contact: fsombraufc@gmail.com
-etherpad:
+etherpad: https://pad.carpentries.org/labvis-2018
 eventbrite: 
 ---
 <!--
@@ -41,7 +41,7 @@ eventbrite:
   scrolling="auto">
 </iframe>
 {% endif %}
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfjnC_t8eEiiHQSg7aR8Dhi2ZefXgFd1I3OLjBf4Amp20yjAw/viewform" class="btn btn-primary btn-lg btn-block">Inscreva-se Aqui</a>
+<a href="https://pad.carpentries.org/labvis-2018" class="btn btn-primary btn-lg btn-block">Etherpad</a>
 
 <h2>Informações gerais</h2>
 
